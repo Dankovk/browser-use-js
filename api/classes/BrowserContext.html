@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-api/classes/BrowserContext" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">BrowserContext | browser-use-node</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://dankovk.github.io/browser-use-node/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://dankovk.github.io/browser-use-node/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://dankovk.github.io/browser-use-node/api/classes/BrowserContext"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="BrowserContext | browser-use-node"><meta data-rh="true" name="description" content="browser-use-node"><meta data-rh="true" property="og:description" content="browser-use-node"><link data-rh="true" rel="icon" href="/browser-use-node/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://dankovk.github.io/browser-use-node/api/classes/BrowserContext"><link data-rh="true" rel="alternate" href="https://dankovk.github.io/browser-use-node/api/classes/BrowserContext" hreflang="en"><link data-rh="true" rel="alternate" href="https://dankovk.github.io/browser-use-node/api/classes/BrowserContext" hreflang="x-default"><link rel="stylesheet" href="/browser-use-node/assets/css/styles.8f97bd17.css">
+<script src="/browser-use-node/assets/js/runtime~main.5a4a7333.js" defer="defer"></script>
+<script src="/browser-use-node/assets/js/main.8bd7cd6c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/browser-use-node/"><div class="navbar__logo"><img src="/browser-use-node/img/logo.svg" alt="browser-use Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/browser-use-node/img/logo.svg" alt="browser-use Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">browser-use-node</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/browser-use-node/">Getting Started</a><a class="navbar__item navbar__link" href="/browser-use-node/guides">Guides</a><a class="navbar__item navbar__link" href="/browser-use-node/api/globals">API Reference</a><a class="navbar__item navbar__link" href="/browser-use-node/contributing">Contributing</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/dankovk/browser-use-node" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/browser-use-node/">Getting Started with browser-use-node</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/browser-use-node/guides">Guides</a><button aria-label="Expand sidebar category &#x27;Guides&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/browser-use-node/api/globals">API Reference</a><button aria-label="Collapse sidebar category &#x27;API Reference&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/browser-use-node/api/globals">globals</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/browser-use-node/api/classes/Agent">Classes</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/browser-use-node/api/classes/Agent">Agent</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/browser-use-node/api/classes/Browser">Browser</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/browser-use-node/api/classes/BrowserContext">BrowserContext</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/browser-use-node/api/classes/Controller">Controller</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/browser-use-node/api/classes/DOMObserver">DOMObserver</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/browser-use-node/api/classes/DOMService">DOMService</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/browser-use-node/api/classes/Registry">Registry</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/browser-use-node/api/interfaces/AgentConfig">Interfaces</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/browser-use-node/api/type-aliases/ConfigFile">Types</a></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/browser-use-node/contributing">Project</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/browser-use-node/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/browser-use-node/api/globals"><span itemprop="name">API Reference</span></a><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Classes</span><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">BrowserContext</span><meta itemprop="position" content="3"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>BrowserContext</h1></header><p><a href="/browser-use-node/api"><strong>browser-use-node</strong></a></p>
+<hr>
+<p><a href="/browser-use-node/api/globals">browser-use-node</a> / BrowserContext</p>
+<h1>Class: BrowserContext</h1>
+<p>Browser context with enhanced capabilities</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="constructors">Constructors<a href="#constructors" class="hash-link" aria-label="Direct link to Constructors" title="Direct link to Constructors">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-browsercontext">new BrowserContext()<a href="#new-browsercontext" class="hash-link" aria-label="Direct link to new BrowserContext()" title="Direct link to new BrowserContext()">​</a></h3>
+<blockquote>
+<p><strong>new BrowserContext</strong>(<code>browser</code>, <code>config</code>): <a href="/browser-use-node/api/classes/BrowserContext"><code>BrowserContext</code></a></p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters">Parameters<a href="#parameters" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="browser">browser<a href="#browser" class="hash-link" aria-label="Direct link to browser" title="Direct link to browser">​</a></h5>
+<p><a href="/browser-use-node/api/classes/Browser"><code>Browser</code></a></p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="config">config<a href="#config" class="hash-link" aria-label="Direct link to config" title="Direct link to config">​</a></h5>
+<p><code>Partial</code>&lt;<code>BrowserContextConfig</code>&gt; = <code>{}</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns">Returns<a href="#returns" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><a href="/browser-use-node/api/classes/BrowserContext"><code>BrowserContext</code></a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in">Defined in<a href="#defined-in" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L124" target="_blank" rel="noopener noreferrer">src/browser/context.ts:124</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="accessors">Accessors<a href="#accessors" class="hash-link" aria-label="Direct link to Accessors" title="Direct link to Accessors">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pages">pages<a href="#pages" class="hash-link" aria-label="Direct link to pages" title="Direct link to pages">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="get-signature">Get Signature<a href="#get-signature" class="hash-link" aria-label="Direct link to Get Signature" title="Direct link to Get Signature">​</a></h4>
+<blockquote>
+<p><strong>get</strong> <strong>pages</strong>(): [<code>number</code>, <code>Page</code>][]</p>
+</blockquote>
+<p>Get all pages in the context</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="returns-1">Returns<a href="#returns-1" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h5>
+<p>[<code>number</code>, <code>Page</code>][]</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-1">Defined in<a href="#defined-in-1" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L329" target="_blank" rel="noopener noreferrer">src/browser/context.ts:329</a></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="methods">Methods<a href="#methods" class="hash-link" aria-label="Direct link to Methods" title="Direct link to Methods">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="addeventlistener">addEventListener()<a href="#addeventlistener" class="hash-link" aria-label="Direct link to addEventListener()" title="Direct link to addEventListener()">​</a></h3>
+<blockquote>
+<p><strong>addEventListener</strong>&lt;<code>T</code>&gt;(<code>eventType</code>, <code>handler</code>, <code>options</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Add an event listener for a specific page event with error handling</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="type-parameters">Type Parameters<a href="#type-parameters" class="hash-link" aria-label="Direct link to Type Parameters" title="Direct link to Type Parameters">​</a></h4>
+<p>• <strong>T</strong> <em>extends</em> <a href="/browser-use-node/api/type-aliases/PageEventType"><code>PageEventType</code></a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-1">Parameters<a href="#parameters-1" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="eventtype">eventType<a href="#eventtype" class="hash-link" aria-label="Direct link to eventType" title="Direct link to eventType">​</a></h5>
+<p><code>T</code></p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="handler">handler<a href="#handler" class="hash-link" aria-label="Direct link to handler" title="Direct link to handler">​</a></h5>
+<p><a href="/browser-use-node/api/type-aliases/PageEventHandler"><code>PageEventHandler</code></a>[<code>T</code>]</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="options">options<a href="#options" class="hash-link" aria-label="Direct link to options" title="Direct link to options">​</a></h5>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="once">once<a href="#once" class="hash-link" aria-label="Direct link to once" title="Direct link to once">​</a></h6>
+<p><code>boolean</code></p>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="timeout">timeout<a href="#timeout" class="hash-link" aria-label="Direct link to timeout" title="Direct link to timeout">​</a></h6>
+<p><code>number</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-2">Returns<a href="#returns-2" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-2">Defined in<a href="#defined-in-2" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1840" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1840</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="addrequestinterceptor">addRequestInterceptor()<a href="#addrequestinterceptor" class="hash-link" aria-label="Direct link to addRequestInterceptor()" title="Direct link to addRequestInterceptor()">​</a></h3>
+<blockquote>
+<p><strong>addRequestInterceptor</strong>(<code>interceptor</code>): <code>void</code></p>
+</blockquote>
+<p>Add a request interceptor with validation</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-2">Parameters<a href="#parameters-2" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="interceptor">interceptor<a href="#interceptor" class="hash-link" aria-label="Direct link to interceptor" title="Direct link to interceptor">​</a></h5>
+<p><a href="/browser-use-node/api/interfaces/RequestInterceptor"><code>RequestInterceptor</code></a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-3">Returns<a href="#returns-3" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>void</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-3">Defined in<a href="#defined-in-3" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1655" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1655</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="addresponseinterceptor">addResponseInterceptor()<a href="#addresponseinterceptor" class="hash-link" aria-label="Direct link to addResponseInterceptor()" title="Direct link to addResponseInterceptor()">​</a></h3>
+<blockquote>
+<p><strong>addResponseInterceptor</strong>(<code>interceptor</code>): <code>void</code></p>
+</blockquote>
+<p>Add a response interceptor with validation</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-3">Parameters<a href="#parameters-3" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="interceptor-1">interceptor<a href="#interceptor-1" class="hash-link" aria-label="Direct link to interceptor" title="Direct link to interceptor">​</a></h5>
+<p><a href="/browser-use-node/api/interfaces/ResponseInterceptor"><code>ResponseInterceptor</code></a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-4">Returns<a href="#returns-4" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>void</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-4">Defined in<a href="#defined-in-4" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1740" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1740</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="blockrequests">blockRequests()<a href="#blockrequests" class="hash-link" aria-label="Direct link to blockRequests()" title="Direct link to blockRequests()">​</a></h3>
+<blockquote>
+<p><strong>blockRequests</strong>(<code>urlPattern</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Block requests matching a URL pattern</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-4">Parameters<a href="#parameters-4" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="urlpattern">urlPattern<a href="#urlpattern" class="hash-link" aria-label="Direct link to urlPattern" title="Direct link to urlPattern">​</a></h5>
+<p><code>string</code> | <code>RegExp</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-5">Returns<a href="#returns-5" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-5">Defined in<a href="#defined-in-5" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1782" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1782</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="cleanup">cleanup()<a href="#cleanup" class="hash-link" aria-label="Direct link to cleanup()" title="Direct link to cleanup()">​</a></h3>
+<blockquote>
+<p><strong>cleanup</strong>(): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Cleanup when object is destroyed</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-6">Returns<a href="#returns-6" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-6">Defined in<a href="#defined-in-6" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L300" target="_blank" rel="noopener noreferrer">src/browser/context.ts:300</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="clearalleventlisteners">clearAllEventListeners()<a href="#clearalleventlisteners" class="hash-link" aria-label="Direct link to clearAllEventListeners()" title="Direct link to clearAllEventListeners()">​</a></h3>
+<blockquote>
+<p><strong>clearAllEventListeners</strong>(): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Clear all event listeners</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-7">Returns<a href="#returns-7" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-7">Defined in<a href="#defined-in-7" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1939" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1939</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="clearcookies">clearCookies()<a href="#clearcookies" class="hash-link" aria-label="Direct link to clearCookies()" title="Direct link to clearCookies()">​</a></h3>
+<blockquote>
+<p><strong>clearCookies</strong>(): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Clear all cookies from the current context</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-8">Returns<a href="#returns-8" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-8">Defined in<a href="#defined-in-8" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1522" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1522</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="clearrequestinterceptors">clearRequestInterceptors()<a href="#clearrequestinterceptors" class="hash-link" aria-label="Direct link to clearRequestInterceptors()" title="Direct link to clearRequestInterceptors()">​</a></h3>
+<blockquote>
+<p><strong>clearRequestInterceptors</strong>(): <code>void</code></p>
+</blockquote>
+<p>Clear all request interceptors</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-9">Returns<a href="#returns-9" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>void</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-9">Defined in<a href="#defined-in-9" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1688" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1688</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="clearresponseinterceptors">clearResponseInterceptors()<a href="#clearresponseinterceptors" class="hash-link" aria-label="Direct link to clearResponseInterceptors()" title="Direct link to clearResponseInterceptors()">​</a></h3>
+<blockquote>
+<p><strong>clearResponseInterceptors</strong>(): <code>void</code></p>
+</blockquote>
+<p>Clear all response interceptors</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-10">Returns<a href="#returns-10" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>void</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-10">Defined in<a href="#defined-in-10" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1773" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1773</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="close">close()<a href="#close" class="hash-link" aria-label="Direct link to close()" title="Direct link to close()">​</a></h3>
+<blockquote>
+<p><strong>close</strong>(): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Close the browser context and clean up resources</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-11">Returns<a href="#returns-11" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-11">Defined in<a href="#defined-in-11" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L239" target="_blank" rel="noopener noreferrer">src/browser/context.ts:239</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="closecurrenttab">closeCurrentTab()<a href="#closecurrenttab" class="hash-link" aria-label="Direct link to closeCurrentTab()" title="Direct link to closeCurrentTab()">​</a></h3>
+<blockquote>
+<p><strong>closeCurrentTab</strong>(): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Close the current tab</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-12">Returns<a href="#returns-12" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-12">Defined in<a href="#defined-in-12" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L945" target="_blank" rel="noopener noreferrer">src/browser/context.ts:945</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="createnewtab">createNewTab()<a href="#createnewtab" class="hash-link" aria-label="Direct link to createNewTab()" title="Direct link to createNewTab()">​</a></h3>
+<blockquote>
+<p><strong>createNewTab</strong>(<code>url</code>?): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Create a new tab</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-5">Parameters<a href="#parameters-5" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="url">url?<a href="#url" class="hash-link" aria-label="Direct link to url?" title="Direct link to url?">​</a></h5>
+<p><code>string</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-13">Returns<a href="#returns-13" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-13">Defined in<a href="#defined-in-13" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L889" target="_blank" rel="noopener noreferrer">src/browser/context.ts:889</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="deletecookies">deleteCookies()<a href="#deletecookies" class="hash-link" aria-label="Direct link to deleteCookies()" title="Direct link to deleteCookies()">​</a></h3>
+<blockquote>
+<p><strong>deleteCookies</strong>(<code>names</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Delete specific cookies by name</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-6">Parameters<a href="#parameters-6" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="names">names<a href="#names" class="hash-link" aria-label="Direct link to names" title="Direct link to names">​</a></h5>
+<p><code>string</code>[]</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-14">Returns<a href="#returns-14" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-14">Defined in<a href="#defined-in-14" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1537" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1537</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="enter">enter()<a href="#enter" class="hash-link" aria-label="Direct link to enter()" title="Direct link to enter()">​</a></h3>
+<blockquote>
+<p><strong>enter</strong>(): <code>Promise</code>&lt;<a href="/browser-use-node/api/classes/BrowserContext"><code>BrowserContext</code></a>&gt;</p>
+</blockquote>
+<p>Async context manager entry</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-15">Returns<a href="#returns-15" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<a href="/browser-use-node/api/classes/BrowserContext"><code>BrowserContext</code></a>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-15">Defined in<a href="#defined-in-15" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L150" target="_blank" rel="noopener noreferrer">src/browser/context.ts:150</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="executejavascript">executeJavaScript()<a href="#executejavascript" class="hash-link" aria-label="Direct link to executeJavaScript()" title="Direct link to executeJavaScript()">​</a></h3>
+<blockquote>
+<p><strong>executeJavaScript</strong>&lt;<code>T</code>&gt;(<code>script</code>, <code>options</code>): <code>Promise</code>&lt;<code>T</code>&gt;</p>
+</blockquote>
+<p>Execute JavaScript code on the page with proper error handling and timeout</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="type-parameters-1">Type Parameters<a href="#type-parameters-1" class="hash-link" aria-label="Direct link to Type Parameters" title="Direct link to Type Parameters">​</a></h4>
+<p>• <strong>T</strong></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-7">Parameters<a href="#parameters-7" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="script">script<a href="#script" class="hash-link" aria-label="Direct link to script" title="Direct link to script">​</a></h5>
+<p><code>string</code></p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="options-1">options<a href="#options-1" class="hash-link" aria-label="Direct link to options" title="Direct link to options">​</a></h5>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="args">args<a href="#args" class="hash-link" aria-label="Direct link to args" title="Direct link to args">​</a></h6>
+<p><code>any</code>[]</p>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="returnbyvalue">returnByValue<a href="#returnbyvalue" class="hash-link" aria-label="Direct link to returnByValue" title="Direct link to returnByValue">​</a></h6>
+<p><code>boolean</code></p>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="timeout-1">timeout<a href="#timeout-1" class="hash-link" aria-label="Direct link to timeout" title="Direct link to timeout">​</a></h6>
+<p><code>number</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-16">Returns<a href="#returns-16" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>T</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-16">Defined in<a href="#defined-in-16" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1013" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1013</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="exit">exit()<a href="#exit" class="hash-link" aria-label="Direct link to exit()" title="Direct link to exit()">​</a></h3>
+<blockquote>
+<p><strong>exit</strong>(<code>error</code>?): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Async context manager exit</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-8">Parameters<a href="#parameters-8" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="error">error?<a href="#error" class="hash-link" aria-label="Direct link to error?" title="Direct link to error?">​</a></h5>
+<p><code>Error</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-17">Returns<a href="#returns-17" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-17">Defined in<a href="#defined-in-17" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L158" target="_blank" rel="noopener noreferrer">src/browser/context.ts:158</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="exportcookies">exportCookies()<a href="#exportcookies" class="hash-link" aria-label="Direct link to exportCookies()" title="Direct link to exportCookies()">​</a></h3>
+<blockquote>
+<p><strong>exportCookies</strong>(): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Export cookies to a JSON string</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-18">Returns<a href="#returns-18" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-18">Defined in<a href="#defined-in-18" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1567" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1567</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getconfig">getConfig()<a href="#getconfig" class="hash-link" aria-label="Direct link to getConfig()" title="Direct link to getConfig()">​</a></h3>
+<blockquote>
+<p><strong>getConfig</strong>(): <code>BrowserContextConfig</code></p>
+</blockquote>
+<p>Get the config</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-19">Returns<a href="#returns-19" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>BrowserContextConfig</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-19">Defined in<a href="#defined-in-19" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L810" target="_blank" rel="noopener noreferrer">src/browser/context.ts:810</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getcookies">getCookies()<a href="#getcookies" class="hash-link" aria-label="Direct link to getCookies()" title="Direct link to getCookies()">​</a></h3>
+<blockquote>
+<p><strong>getCookies</strong>(): <code>Promise</code>&lt;<code>Cookie</code>[]&gt;</p>
+</blockquote>
+<p>Get all cookies for the current context</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-20">Returns<a href="#returns-20" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>Cookie</code>[]&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-20">Defined in<a href="#defined-in-20" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1463" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1463</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getcookiesforurl">getCookiesForUrl()<a href="#getcookiesforurl" class="hash-link" aria-label="Direct link to getCookiesForUrl()" title="Direct link to getCookiesForUrl()">​</a></h3>
+<blockquote>
+<p><strong>getCookiesForUrl</strong>(<code>url</code>): <code>Promise</code>&lt;<code>Cookie</code>[]&gt;</p>
+</blockquote>
+<p>Get cookies for a specific URL</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-9">Parameters<a href="#parameters-9" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="url-1">url<a href="#url-1" class="hash-link" aria-label="Direct link to url" title="Direct link to url">​</a></h5>
+<p><code>string</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-21">Returns<a href="#returns-21" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>Cookie</code>[]&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-21">Defined in<a href="#defined-in-21" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1478" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1478</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getdomelementbyindex">getDomElementByIndex()<a href="#getdomelementbyindex" class="hash-link" aria-label="Direct link to getDomElementByIndex()" title="Direct link to getDomElementByIndex()">​</a></h3>
+<blockquote>
+<p><strong>getDomElementByIndex</strong>(<code>index</code>): <code>Promise</code>&lt;<code>null</code> | <a href="/browser-use-node/api/interfaces/DOMElementNode"><code>DOMElementNode</code></a>&gt;</p>
+</blockquote>
+<p>Get DOM element by index with validation</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-10">Parameters<a href="#parameters-10" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="index">index<a href="#index" class="hash-link" aria-label="Direct link to index" title="Direct link to index">​</a></h5>
+<p><code>number</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-22">Returns<a href="#returns-22" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>null</code> | <a href="/browser-use-node/api/interfaces/DOMElementNode"><code>DOMElementNode</code></a>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-22">Defined in<a href="#defined-in-22" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1124" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1124</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getelementbyindex">getElementByIndex()<a href="#getelementbyindex" class="hash-link" aria-label="Direct link to getElementByIndex()" title="Direct link to getElementByIndex()">​</a></h3>
+<blockquote>
+<p><strong>getElementByIndex</strong>(<code>index</code>): <code>Promise</code>&lt;<code>null</code> | <code>ElementHandle</code>&lt;<code>Element</code>&gt;&gt;</p>
+</blockquote>
+<p>Get element by index with retry logic for stale elements</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-11">Parameters<a href="#parameters-11" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="index-1">index<a href="#index-1" class="hash-link" aria-label="Direct link to index" title="Direct link to index">​</a></h5>
+<p><code>number</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-23">Returns<a href="#returns-23" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>null</code> | <code>ElementHandle</code>&lt;<code>Element</code>&gt;&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-23">Defined in<a href="#defined-in-23" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1079" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1079</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getlocateelement">getLocateElement()<a href="#getlocateelement" class="hash-link" aria-label="Direct link to getLocateElement()" title="Direct link to getLocateElement()">​</a></h3>
+<blockquote>
+<p><strong>getLocateElement</strong>(<code>element</code>): <code>Promise</code>&lt;<code>null</code> | <code>ElementHandle</code>&gt;</p>
+</blockquote>
+<p>Get element handle with enhanced location strategy</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-12">Parameters<a href="#parameters-12" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="element">element<a href="#element" class="hash-link" aria-label="Direct link to element" title="Direct link to element">​</a></h5>
+<p><a href="/browser-use-node/api/interfaces/DOMElementNode"><code>DOMElementNode</code></a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-24">Returns<a href="#returns-24" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>null</code> | <code>ElementHandle</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-24">Defined in<a href="#defined-in-24" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1265" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1265</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getpagehtml">getPageHtml()<a href="#getpagehtml" class="hash-link" aria-label="Direct link to getPageHtml()" title="Direct link to getPageHtml()">​</a></h3>
+<blockquote>
+<p><strong>getPageHtml</strong>(<code>options</code>): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Get the current page HTML content with error handling</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-13">Parameters<a href="#parameters-13" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="options-2">options<a href="#options-2" class="hash-link" aria-label="Direct link to options" title="Direct link to options">​</a></h5>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="timeout-2">timeout<a href="#timeout-2" class="hash-link" aria-label="Direct link to timeout" title="Direct link to timeout">​</a></h6>
+<p><code>number</code></p>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="waituntil">waitUntil<a href="#waituntil" class="hash-link" aria-label="Direct link to waitUntil" title="Direct link to waitUntil">​</a></h6>
+<p><code>&quot;load&quot;</code> | <code>&quot;domcontentloaded&quot;</code> | <code>&quot;networkidle&quot;</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-25">Returns<a href="#returns-25" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-25">Defined in<a href="#defined-in-25" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L981" target="_blank" rel="noopener noreferrer">src/browser/context.ts:981</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getsession">getSession()<a href="#getsession" class="hash-link" aria-label="Direct link to getSession()" title="Direct link to getSession()">​</a></h3>
+<blockquote>
+<p><strong>getSession</strong>(): <code>Promise</code>&lt;<code>BrowserSession</code>&gt;</p>
+</blockquote>
+<p>Get the current session</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-26">Returns<a href="#returns-26" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>BrowserSession</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-26">Defined in<a href="#defined-in-26" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L217" target="_blank" rel="noopener noreferrer">src/browser/context.ts:217</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getstate">getState()<a href="#getstate" class="hash-link" aria-label="Direct link to getState()" title="Direct link to getState()">​</a></h3>
+<blockquote>
+<p><strong>getState</strong>(<code>useVision</code>): <code>Promise</code>&lt;<code>BrowserState</code>&gt;</p>
+</blockquote>
+<p>Get the current state of the browser</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-14">Parameters<a href="#parameters-14" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="usevision">useVision<a href="#usevision" class="hash-link" aria-label="Direct link to useVision" title="Direct link to useVision">​</a></h5>
+<p><code>boolean</code> = <code>false</code></p>
+<p>Whether to include a screenshot in the state</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-27">Returns<a href="#returns-27" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>BrowserState</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-27">Defined in<a href="#defined-in-27" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L496" target="_blank" rel="noopener noreferrer">src/browser/context.ts:496</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="getstatehistory">getStateHistory()<a href="#getstatehistory" class="hash-link" aria-label="Direct link to getStateHistory()" title="Direct link to getStateHistory()">​</a></h3>
+<blockquote>
+<p><strong>getStateHistory</strong>(): <code>Promise</code>&lt;<code>BrowserStateHistory</code>&gt;</p>
+</blockquote>
+<p>Get the browser state history</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-28">Returns<a href="#returns-28" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>BrowserStateHistory</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-28">Defined in<a href="#defined-in-28" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L778" target="_blank" rel="noopener noreferrer">src/browser/context.ts:778</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="goback">goBack()<a href="#goback" class="hash-link" aria-label="Direct link to goBack()" title="Direct link to goBack()">​</a></h3>
+<blockquote>
+<p><strong>goBack</strong>(): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Navigate back in history</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-29">Returns<a href="#returns-29" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-29">Defined in<a href="#defined-in-29" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L856" target="_blank" rel="noopener noreferrer">src/browser/context.ts:856</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="goforward">goForward()<a href="#goforward" class="hash-link" aria-label="Direct link to goForward()" title="Direct link to goForward()">​</a></h3>
+<blockquote>
+<p><strong>goForward</strong>(): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Navigate forward in history</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-30">Returns<a href="#returns-30" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-30">Defined in<a href="#defined-in-30" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L865" target="_blank" rel="noopener noreferrer">src/browser/context.ts:865</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="importcookies">importCookies()<a href="#importcookies" class="hash-link" aria-label="Direct link to importCookies()" title="Direct link to importCookies()">​</a></h3>
+<blockquote>
+<p><strong>importCookies</strong>(<code>cookiesJson</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Import cookies from a JSON string</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-15">Parameters<a href="#parameters-15" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="cookiesjson">cookiesJson<a href="#cookiesjson" class="hash-link" aria-label="Direct link to cookiesJson" title="Direct link to cookiesJson">​</a></h5>
+<p><code>string</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-31">Returns<a href="#returns-31" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-31">Defined in<a href="#defined-in-31" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1579" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1579</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="isfileuploader">isFileUploader()<a href="#isfileuploader" class="hash-link" aria-label="Direct link to isFileUploader()" title="Direct link to isFileUploader()">​</a></h3>
+<blockquote>
+<p><strong>isFileUploader</strong>(<code>elementNode</code>, <code>maxDepth</code>, <code>currentDepth</code>): <code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+</blockquote>
+<p>Check if element or its children are file uploaders</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-16">Parameters<a href="#parameters-16" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="elementnode">elementNode<a href="#elementnode" class="hash-link" aria-label="Direct link to elementNode" title="Direct link to elementNode">​</a></h5>
+<p><a href="/browser-use-node/api/interfaces/DOMElementNode"><code>DOMElementNode</code></a></p>
+<p>The element to check</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="maxdepth">maxDepth<a href="#maxdepth" class="hash-link" aria-label="Direct link to maxDepth" title="Direct link to maxDepth">​</a></h5>
+<p><code>number</code> = <code>3</code></p>
+<p>Maximum depth to check children</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="currentdepth">currentDepth<a href="#currentdepth" class="hash-link" aria-label="Direct link to currentDepth" title="Direct link to currentDepth">​</a></h5>
+<p><code>number</code> = <code>0</code></p>
+<p>Current depth in recursion</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-32">Returns<a href="#returns-32" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>boolean</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-32">Defined in<a href="#defined-in-32" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L905" target="_blank" rel="noopener noreferrer">src/browser/context.ts:905</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="mockresponse">mockResponse()<a href="#mockresponse" class="hash-link" aria-label="Direct link to mockResponse()" title="Direct link to mockResponse()">​</a></h3>
+<blockquote>
+<p><strong>mockResponse</strong>(<code>urlPattern</code>, <code>response</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Mock a response for requests matching a URL pattern</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-17">Parameters<a href="#parameters-17" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="urlpattern-1">urlPattern<a href="#urlpattern-1" class="hash-link" aria-label="Direct link to urlPattern" title="Direct link to urlPattern">​</a></h5>
+<p><code>string</code> | <code>RegExp</code></p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="response">response<a href="#response" class="hash-link" aria-label="Direct link to response" title="Direct link to response">​</a></h5>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="body">body<a href="#body" class="hash-link" aria-label="Direct link to body" title="Direct link to body">​</a></h6>
+<p><code>string</code></p>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="headers">headers<a href="#headers" class="hash-link" aria-label="Direct link to headers" title="Direct link to headers">​</a></h6>
+<p><code>Record</code>&lt;<code>string</code>, <code>string</code>&gt;</p>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="status">status<a href="#status" class="hash-link" aria-label="Direct link to status" title="Direct link to status">​</a></h6>
+<p><code>number</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-33">Returns<a href="#returns-33" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-33">Defined in<a href="#defined-in-33" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1803" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1803</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="navigateto">navigateTo()<a href="#navigateto" class="hash-link" aria-label="Direct link to navigateTo()" title="Direct link to navigateTo()">​</a></h3>
+<blockquote>
+<p><strong>navigateTo</strong>(<code>url</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Navigate to a URL</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-18">Parameters<a href="#parameters-18" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="url-2">url<a href="#url-2" class="hash-link" aria-label="Direct link to url" title="Direct link to url">​</a></h5>
+<p><code>string</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-34">Returns<a href="#returns-34" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-34">Defined in<a href="#defined-in-34" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L838" target="_blank" rel="noopener noreferrer">src/browser/context.ts:838</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="onconsole">onConsole()<a href="#onconsole" class="hash-link" aria-label="Direct link to onConsole()" title="Direct link to onConsole()">​</a></h3>
+<blockquote>
+<p><strong>onConsole</strong>(<code>handler</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Add a console message listener with error handling</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-19">Parameters<a href="#parameters-19" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="handler-1">handler<a href="#handler-1" class="hash-link" aria-label="Direct link to handler" title="Direct link to handler">​</a></h5>
+<p>(<code>msg</code>) =&gt; <code>void</code> | <code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-35">Returns<a href="#returns-35" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-35">Defined in<a href="#defined-in-35" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1967" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1967</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ondialog">onDialog()<a href="#ondialog" class="hash-link" aria-label="Direct link to onDialog()" title="Direct link to onDialog()">​</a></h3>
+<blockquote>
+<p><strong>onDialog</strong>(<code>handler</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Add a dialog listener with error handling</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-20">Parameters<a href="#parameters-20" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="handler-2">handler<a href="#handler-2" class="hash-link" aria-label="Direct link to handler" title="Direct link to handler">​</a></h5>
+<p>(<code>dialog</code>) =&gt; <code>void</code> | <code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-36">Returns<a href="#returns-36" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-36">Defined in<a href="#defined-in-36" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1977" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1977</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ondownload">onDownload()<a href="#ondownload" class="hash-link" aria-label="Direct link to onDownload()" title="Direct link to onDownload()">​</a></h3>
+<blockquote>
+<p><strong>onDownload</strong>(<code>handler</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Add a download listener with error handling</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-21">Parameters<a href="#parameters-21" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="handler-3">handler<a href="#handler-3" class="hash-link" aria-label="Direct link to handler" title="Direct link to handler">​</a></h5>
+<p>(<code>download</code>) =&gt; <code>void</code> | <code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-37">Returns<a href="#returns-37" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-37">Defined in<a href="#defined-in-37" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1987" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1987</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="onfilechooser">onFileChooser()<a href="#onfilechooser" class="hash-link" aria-label="Direct link to onFileChooser()" title="Direct link to onFileChooser()">​</a></h3>
+<blockquote>
+<p><strong>onFileChooser</strong>(<code>handler</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Add a file chooser listener with error handling</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-22">Parameters<a href="#parameters-22" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="handler-4">handler<a href="#handler-4" class="hash-link" aria-label="Direct link to handler" title="Direct link to handler">​</a></h5>
+<p>(<code>fileChooser</code>) =&gt; <code>void</code> | <code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-38">Returns<a href="#returns-38" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-38">Defined in<a href="#defined-in-38" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1997" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1997</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="onpageerror">onPageError()<a href="#onpageerror" class="hash-link" aria-label="Direct link to onPageError()" title="Direct link to onPageError()">​</a></h3>
+<blockquote>
+<p><strong>onPageError</strong>(<code>handler</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Add a page error listener with error handling</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-23">Parameters<a href="#parameters-23" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="handler-5">handler<a href="#handler-5" class="hash-link" aria-label="Direct link to handler" title="Direct link to handler">​</a></h5>
+<p>(<code>error</code>) =&gt; <code>void</code> | <code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-39">Returns<a href="#returns-39" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-39">Defined in<a href="#defined-in-39" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L2007" target="_blank" rel="noopener noreferrer">src/browser/context.ts:2007</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="onpopup">onPopup()<a href="#onpopup" class="hash-link" aria-label="Direct link to onPopup()" title="Direct link to onPopup()">​</a></h3>
+<blockquote>
+<p><strong>onPopup</strong>(<code>handler</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Add a popup listener with error handling</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-24">Parameters<a href="#parameters-24" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="handler-6">handler<a href="#handler-6" class="hash-link" aria-label="Direct link to handler" title="Direct link to handler">​</a></h5>
+<p>(<code>page</code>) =&gt; <code>void</code> | <code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-40">Returns<a href="#returns-40" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-40">Defined in<a href="#defined-in-40" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L2017" target="_blank" rel="noopener noreferrer">src/browser/context.ts:2017</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="onwebsocket">onWebSocket()<a href="#onwebsocket" class="hash-link" aria-label="Direct link to onWebSocket()" title="Direct link to onWebSocket()">​</a></h3>
+<blockquote>
+<p><strong>onWebSocket</strong>(<code>handler</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Add a WebSocket listener with error handling</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-25">Parameters<a href="#parameters-25" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="handler-7">handler<a href="#handler-7" class="hash-link" aria-label="Direct link to handler" title="Direct link to handler"> ​</a></h5>
+<p>(<code>websocket</code>) =&gt; <code>void</code> | <code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-41">Returns<a href="#returns-41" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-41">Defined in<a href="#defined-in-41" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L2027" target="_blank" rel="noopener noreferrer">src/browser/context.ts:2027</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="onworker">onWorker()<a href="#onworker" class="hash-link" aria-label="Direct link to onWorker()" title="Direct link to onWorker()">​</a></h3>
+<blockquote>
+<p><strong>onWorker</strong>(<code>handler</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Add a worker listener with error handling</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-26">Parameters<a href="#parameters-26" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="handler-8">handler<a href="#handler-8" class="hash-link" aria-label="Direct link to handler" title="Direct link to handler">​</a></h5>
+<p>(<code>worker</code>) =&gt; <code>void</code> | <code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-42">Returns<a href="#returns-42" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-42">Defined in<a href="#defined-in-42" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L2037" target="_blank" rel="noopener noreferrer">src/browser/context.ts:2037</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="refreshpage">refreshPage()<a href="#refreshpage" class="hash-link" aria-label="Direct link to refreshPage()" title="Direct link to refreshPage()">​</a></h3>
+<blockquote>
+<p><strong>refreshPage</strong>(): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Refresh the current page</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-43">Returns<a href="#returns-43" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-43">Defined in<a href="#defined-in-43" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L847" target="_blank" rel="noopener noreferrer">src/browser/context.ts:847</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="removealleventlisteners">removeAllEventListeners()<a href="#removealleventlisteners" class="hash-link" aria-label="Direct link to removeAllEventListeners()" title="Direct link to removeAllEventListeners()">​</a></h3>
+<blockquote>
+<p><strong>removeAllEventListeners</strong>(<code>eventType</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Remove all event listeners for a specific event type</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-27">Parameters<a href="#parameters-27" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="eventtype-1">eventType<a href="#eventtype-1" class="hash-link" aria-label="Direct link to eventType" title="Direct link to eventType">​</a></h5>
+<p><a href="/browser-use-node/api/type-aliases/PageEventType"><code>PageEventType</code></a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-44">Returns<a href="#returns-44" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-44">Defined in<a href="#defined-in-44" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1919" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1919</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="removeeventlistener">removeEventListener()<a href="#removeeventlistener" class="hash-link" aria-label="Direct link to removeEventListener()" title="Direct link to removeEventListener()">​</a></h3>
+<blockquote>
+<p><strong>removeEventListener</strong>&lt;<code>T</code>&gt;(<code>eventType</code>, <code>handler</code>): <code>void</code></p>
+</blockquote>
+<p>Remove an event listener for a specific page event</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="type-parameters-2">Type Parameters<a href="#type-parameters-2" class="hash-link" aria-label="Direct link to Type Parameters" title="Direct link to Type Parameters">​</a></h4>
+<p>• <strong>T</strong> <em>extends</em> <a href="/browser-use-node/api/type-aliases/PageEventType"><code>PageEventType</code></a></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-28">Parameters<a href="#parameters-28" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="eventtype-2">eventType<a href="#eventtype-2" class="hash-link" aria-label="Direct link to eventType" title="Direct link to eventType">​</a></h5>
+<p><code>T</code></p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="handler-9">handler<a href="#handler-9" class="hash-link" aria-label="Direct link to handler" title="Direct link to handler">​</a></h5>
+<p><a href="/browser-use-node/api/type-aliases/PageEventHandler"><code>PageEventHandler</code></a>[<code>T</code>]</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-45">Returns<a href="#returns-45" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>void</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-45">Defined in<a href="#defined-in-45" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1896" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1896</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="removerequestinterceptor">removeRequestInterceptor()<a href="#removerequestinterceptor" class="hash-link" aria-label="Direct link to removeRequestInterceptor()" title="Direct link to removeRequestInterceptor()">​</a></h3>
+<blockquote>
+<p><strong>removeRequestInterceptor</strong>(<code>urlPattern</code>): <code>void</code></p>
+</blockquote>
+<p>Remove a request interceptor</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-29">Parameters<a href="#parameters-29" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="urlpattern-2">urlPattern<a href="#urlpattern-2" class="hash-link" aria-label="Direct link to urlPattern" title="Direct link to urlPattern">​</a></h5>
+<p><code>string</code> | <code>RegExp</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-46">Returns<a href="#returns-46" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>void</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-46">Defined in<a href="#defined-in-46" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1674" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1674</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="removeresponseinterceptor">removeResponseInterceptor()<a href="#removeresponseinterceptor" class="hash-link" aria-label="Direct link to removeResponseInterceptor()" title="Direct link to removeResponseInterceptor()">​</a></h3>
+<blockquote>
+<p><strong>removeResponseInterceptor</strong>(<code>urlPattern</code>): <code>void</code></p>
+</blockquote>
+<p>Remove a response interceptor</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-30">Parameters<a href="#parameters-30" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="urlpattern-3">urlPattern<a href="#urlpattern-3" class="hash-link" aria-label="Direct link to urlPattern" title="Direct link to urlPattern">​</a></h5>
+<p><code>string</code> | <code>RegExp</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-47">Returns<a href="#returns-47" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>void</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-47">Defined in<a href="#defined-in-47" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1759" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1759</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="setcookies">setCookies()<a href="#setcookies" class="hash-link" aria-label="Direct link to setCookies()" title="Direct link to setCookies()">​</a></h3>
+<blockquote>
+<p><strong>setCookies</strong>(<code>cookies</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Set cookies for the current context</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-31">Parameters<a href="#parameters-31" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="cookies">cookies<a href="#cookies" class="hash-link" aria-label="Direct link to cookies" title="Direct link to cookies">​</a></h5>
+<p><code>Cookie</code>[]</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-48">Returns<a href="#returns-48" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-48">Defined in<a href="#defined-in-48" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1497" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1497</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="startrequestinterception">startRequestInterception()<a href="#startrequestinterception" class="hash-link" aria-label="Direct link to startRequestInterception()" title="Direct link to startRequestInterception()">​</a></h3>
+<blockquote>
+<p><strong>startRequestInterception</strong>(<code>options</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Start intercepting network requests</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-32">Parameters<a href="#parameters-32" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="options-3">options<a href="#options-3" class="hash-link" aria-label="Direct link to options" title="Direct link to options">​</a></h5>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="ignoreerrors">ignoreErrors<a href="#ignoreerrors" class="hash-link" aria-label="Direct link to ignoreErrors" title="Direct link to ignoreErrors">​</a></h6>
+<p><code>boolean</code></p>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="timeout-3">timeout<a href="#timeout-3" class="hash-link" aria-label="Direct link to timeout" title="Direct link to timeout">​</a></h6>
+<p><code>number</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-49">Returns<a href="#returns-49" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-49">Defined in<a href="#defined-in-49" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1602" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1602</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="startresponseinterception">startResponseInterception()<a href="#startresponseinterception" class="hash-link" aria-label="Direct link to startResponseInterception()" title="Direct link to startResponseInterception()">​</a></h3>
+<blockquote>
+<p><strong>startResponseInterception</strong>(<code>options</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Start intercepting network responses</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-33">Parameters<a href="#parameters-33" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="options-4">options<a href="#options-4" class="hash-link" aria-label="Direct link to options" title="Direct link to options">​</a></h5>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="ignoreerrors-1">ignoreErrors<a href="#ignoreerrors-1" class="hash-link" aria-label="Direct link to ignoreErrors" title="Direct link to ignoreErrors">​</a></h6>
+<p><code>boolean</code></p>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="timeout-4">timeout<a href="#timeout-4" class="hash-link" aria-label="Direct link to timeout" title="Direct link to timeout">​</a></h6>
+<p><code>number</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-50">Returns<a href="#returns-50" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-50">Defined in<a href="#defined-in-50" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1697" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1697</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="switchtotab">switchToTab()<a href="#switchtotab" class="hash-link" aria-label="Direct link to switchToTab()" title="Direct link to switchToTab()">​</a></h3>
+<blockquote>
+<p><strong>switchToTab</strong>(<code>index</code>): <code>Promise</code>&lt;<code>void</code>&gt;</p>
+</blockquote>
+<p>Switch to a specific tab</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-34">Parameters<a href="#parameters-34" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="index-2">index<a href="#index-2" class="hash-link" aria-label="Direct link to index" title="Direct link to index">​</a></h5>
+<p><code>number</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-51">Returns<a href="#returns-51" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>void</code>&gt;</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-51">Defined in<a href="#defined-in-51" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L874" target="_blank" rel="noopener noreferrer">src/browser/context.ts:874</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="takeelementscreenshot">takeElementScreenshot()<a href="#takeelementscreenshot" class="hash-link" aria-label="Direct link to takeElementScreenshot()" title="Direct link to takeElementScreenshot()">​</a></h3>
+<blockquote>
+<p><strong>takeElementScreenshot</strong>(<code>index</code>, <code>path</code>?): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Take a screenshot of a specific element by index</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-35">Parameters<a href="#parameters-35" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="index-3">index<a href="#index-3" class="hash-link" aria-label="Direct link to index" title="Direct link to index">​</a></h5>
+<p><code>number</code></p>
+<p>Element index in the selector map</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="path">path?<a href="#path" class="hash-link" aria-label="Direct link to path?" title="Direct link to path?">​</a></h5>
+<p><code>string</code></p>
+<p>Optional path to save the screenshot</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-52">Returns<a href="#returns-52" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<p>Path to the saved screenshot</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-52">Defined in<a href="#defined-in-52" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1382" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1382</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="takefullpagescreenshot">takeFullPageScreenshot()<a href="#takefullpagescreenshot" class="hash-link" aria-label="Direct link to takeFullPageScreenshot()" title="Direct link to takeFullPageScreenshot()">​</a></h3>
+<blockquote>
+<p><strong>takeFullPageScreenshot</strong>(<code>path</code>?): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Take a full page screenshot</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-36">Parameters<a href="#parameters-36" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="path-1">path?<a href="#path-1" class="hash-link" aria-label="Direct link to path?" title="Direct link to path?">​</a></h5>
+<p><code>string</code></p>
+<p>Optional path to save the screenshot</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-53">Returns<a href="#returns-53" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<p>Path to the saved screenshot</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-53">Defined in<a href="#defined-in-53" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1395" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1395</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="takescreenshot">takeScreenshot()<a href="#takescreenshot" class="hash-link" aria-label="Direct link to takeScreenshot()" title="Direct link to takeScreenshot()">​</a></h3>
+<blockquote>
+<p><strong>takeScreenshot</strong>(<code>options</code>): <code>Promise</code>&lt;<code>string</code>&gt;</p>
+</blockquote>
+<p>Take a screenshot of the current page or element</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="parameters-37">Parameters<a href="#parameters-37" class="hash-link" aria-label="Direct link to Parameters" title="Direct link to Parameters">​</a></h4>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="options-5">options<a href="#options-5" class="hash-link" aria-label="Direct link to options" title="Direct link to options">​</a></h5>
+<p>Screenshot options</p>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="element-1">element<a href="#element-1" class="hash-link" aria-label="Direct link to element" title="Direct link to element">​</a></h6>
+<p><a href="/browser-use-node/api/interfaces/DOMElementNode"><code>DOMElementNode</code></a></p>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="fullpage">fullPage<a href="#fullpage" class="hash-link" aria-label="Direct link to fullPage" title="Direct link to fullPage">​</a></h6>
+<p><code>boolean</code></p>
+<h6 class="anchor anchorWithStickyNavbar_LWe7" id="path-2">path<a href="#path-2" class="hash-link" aria-label="Direct link to path" title="Direct link to path">​</a></h6>
+<p><code>string</code></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="returns-54">Returns<a href="#returns-54" class="hash-link" aria-label="Direct link to Returns" title="Direct link to Returns">​</a></h4>
+<p><code>Promise</code>&lt;<code>string</code>&gt;</p>
+<p>Path to the saved screenshot</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="defined-in-54">Defined in<a href="#defined-in-54" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h4>
+<p><a href="https://github.com/Dankovk/browser-use-js/blob/7aa31eb34b7bafb64e3abcce35e6168864b0fa74/src/browser/context.ts#L1347" target="_blank" rel="noopener noreferrer">src/browser/context.ts:1347</a></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/dankovk/browser-use-node/tree/main/docs/docs/api/classes/BrowserContext.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/browser-use-node/api/classes/Browser"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Browser</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/browser-use-node/api/classes/Controller"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Controller</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#constructors" class="table-of-contents__link toc-highlight">Constructors</a><ul><li><a href="#new-browsercontext" class="table-of-contents__link toc-highlight">new BrowserContext()</a></li></ul></li><li><a href="#accessors" class="table-of-contents__link toc-highlight">Accessors</a><ul><li><a href="#pages" class="table-of-contents__link toc-highlight">pages</a></li></ul></li><li><a href="#methods" class="table-of-contents__link toc-highlight">Methods</a><ul><li><a href="#addeventlistener" class="table-of-contents__link toc-highlight">addEventListener()</a></li><li><a href="#addrequestinterceptor" class="table-of-contents__link toc-highlight">addRequestInterceptor()</a></li><li><a href="#addresponseinterceptor" class="table-of-contents__link toc-highlight">addResponseInterceptor()</a></li><li><a href="#blockrequests" class="table-of-contents__link toc-highlight">blockRequests()</a></li><li><a href="#cleanup" class="table-of-contents__link toc-highlight">cleanup()</a></li><li><a href="#clearalleventlisteners" class="table-of-contents__link toc-highlight">clearAllEventListeners()</a></li><li><a href="#clearcookies" class="table-of-contents__link toc-highlight">clearCookies()</a></li><li><a href="#clearrequestinterceptors" class="table-of-contents__link toc-highlight">clearRequestInterceptors()</a></li><li><a href="#clearresponseinterceptors" class="table-of-contents__link toc-highlight">clearResponseInterceptors()</a></li><li><a href="#close" class="table-of-contents__link toc-highlight">close()</a></li><li><a href="#closecurrenttab" class="table-of-contents__link toc-highlight">closeCurrentTab()</a></li><li><a href="#createnewtab" class="table-of-contents__link toc-highlight">createNewTab()</a></li><li><a href="#deletecookies" class="table-of-contents__link toc-highlight">deleteCookies()</a></li><li><a href="#enter" class="table-of-contents__link toc-highlight">enter()</a></li><li><a href="#executejavascript" class="table-of-contents__link toc-highlight">executeJavaScript()</a></li><li><a href="#exit" class="table-of-contents__link toc-highlight">exit()</a></li><li><a href="#exportcookies" class="table-of-contents__link toc-highlight">exportCookies()</a></li><li><a href="#getconfig" class="table-of-contents__link toc-highlight">getConfig()</a></li><li><a href="#getcookies" class="table-of-contents__link toc-highlight">getCookies()</a></li><li><a href="#getcookiesforurl" class="table-of-contents__link toc-highlight">getCookiesForUrl()</a></li><li><a href="#getdomelementbyindex" class="table-of-contents__link toc-highlight">getDomElementByIndex()</a></li><li><a href="#getelementbyindex" class="table-of-contents__link toc-highlight">getElementByIndex()</a></li><li><a href="#getlocateelement" class="table-of-contents__link toc-highlight">getLocateElement()</a></li><li><a href="#getpagehtml" class="table-of-contents__link toc-highlight">getPageHtml()</a></li><li><a href="#getsession" class="table-of-contents__link toc-highlight">getSession()</a></li><li><a href="#getstate" class="table-of-contents__link toc-highlight">getState()</a></li><li><a href="#getstatehistory" class="table-of-contents__link toc-highlight">getStateHistory()</a></li><li><a href="#goback" class="table-of-contents__link toc-highlight">goBack()</a></li><li><a href="#goforward" class="table-of-contents__link toc-highlight">goForward()</a></li><li><a href="#importcookies" class="table-of-contents__link toc-highlight">importCookies()</a></li><li><a href="#isfileuploader" class="table-of-contents__link toc-highlight">isFileUploader()</a></li><li><a href="#mockresponse" class="table-of-contents__link toc-highlight">mockResponse()</a></li><li><a href="#navigateto" class="table-of-contents__link toc-highlight">navigateTo()</a></li><li><a href="#onconsole" class="table-of-contents__link toc-highlight">onConsole()</a></li><li><a href="#ondialog" class="table-of-contents__link toc-highlight">onDialog()</a></li><li><a href="#ondownload" class="table-of-contents__link toc-highlight">onDownload()</a></li><li><a href="#onfilechooser" class="table-of-contents__link toc-highlight">onFileChooser()</a></li><li><a href="#onpageerror" class="table-of-contents__link toc-highlight">onPageError()</a></li><li><a href="#onpopup" class="table-of-contents__link toc-highlight">onPopup()</a></li><li><a href="#onwebsocket" class="table-of-contents__link toc-highlight">onWebSocket()</a></li><li><a href="#onworker" class="table-of-contents__link toc-highlight">onWorker()</a></li><li><a href="#refreshpage" class="table-of-contents__link toc-highlight">refreshPage()</a></li><li><a href="#removealleventlisteners" class="table-of-contents__link toc-highlight">removeAllEventListeners()</a></li><li><a href="#removeeventlistener" class="table-of-contents__link toc-highlight">removeEventListener()</a></li><li><a href="#removerequestinterceptor" class="table-of-contents__link toc-highlight">removeRequestInterceptor()</a></li><li><a href="#removeresponseinterceptor" class="table-of-contents__link toc-highlight">removeResponseInterceptor()</a></li><li><a href="#setcookies" class="table-of-contents__link toc-highlight">setCookies()</a></li><li><a href="#startrequestinterception" class="table-of-contents__link toc-highlight">startRequestInterception()</a></li><li><a href="#startresponseinterception" class="table-of-contents__link toc-highlight">startResponseInterception()</a></li><li><a href="#switchtotab" class="table-of-contents__link toc-highlight">switchToTab()</a></li><li><a href="#takeelementscreenshot" class="table-of-contents__link toc-highlight">takeElementScreenshot()</a></li><li><a href="#takefullpagescreenshot" class="table-of-contents__link toc-highlight">takeFullPageScreenshot()</a></li><li><a href="#takescreenshot" class="table-of-contents__link toc-highlight">takeScreenshot()</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/browser-use-node/">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/browser-use-node/api/globals">API Reference</a></li></ul></div><div class="col footer__col"><div class="footer__title">Project</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/browser-use-node/contributing">Contributing</a></li><li class="footer__item"><a class="footer__link-item" href="/browser-use-node/code-of-conduct">Code of Conduct</a></li><li class="footer__item"><a class="footer__link-item" href="/browser-use-node/security">Security</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/dankovk/browser-use-node" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/dankovk/browser-use-node/issues" target="_blank" rel="noopener noreferrer" class="footer__link-item">Issues<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 browser-use-node. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

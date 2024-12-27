@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-port-diff" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Python to TypeScript Port Differences | browser-use-node</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://dankovk.github.io/browser-use-node/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://dankovk.github.io/browser-use-node/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://dankovk.github.io/browser-use-node/port-diff"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Python to TypeScript Port Differences | browser-use-node"><meta data-rh="true" name="description" content="Table of Contents"><meta data-rh="true" property="og:description" content="Table of Contents"><link data-rh="true" rel="icon" href="/browser-use-node/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://dankovk.github.io/browser-use-node/port-diff"><link data-rh="true" rel="alternate" href="https://dankovk.github.io/browser-use-node/port-diff" hreflang="en"><link data-rh="true" rel="alternate" href="https://dankovk.github.io/browser-use-node/port-diff" hreflang="x-default"><link rel="stylesheet" href="/browser-use-node/assets/css/styles.8f97bd17.css">
+<script src="/browser-use-node/assets/js/runtime~main.5a4a7333.js" defer="defer"></script>
+<script src="/browser-use-node/assets/js/main.8bd7cd6c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/browser-use-node/"><div class="navbar__logo"><img src="/browser-use-node/img/logo.svg" alt="browser-use Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/browser-use-node/img/logo.svg" alt="browser-use Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">browser-use-node</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/browser-use-node/">Getting Started</a><a class="navbar__item navbar__link" href="/browser-use-node/guides">Guides</a><a class="navbar__item navbar__link" href="/browser-use-node/api/globals">API Reference</a><a class="navbar__item navbar__link" href="/browser-use-node/contributing">Contributing</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/dankovk/browser-use-node" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/browser-use-node/">Getting Started with browser-use-node</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/browser-use-node/guides">Guides</a><button aria-label="Expand sidebar category &#x27;Guides&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/browser-use-node/api/globals">API Reference</a><button aria-label="Expand sidebar category &#x27;API Reference&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/browser-use-node/contributing">Project</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/browser-use-node/contributing">Contributing to browser-use-node</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/browser-use-node/code-of-conduct">Contributor Covenant Code of Conduct</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/browser-use-node/security">Security Policy</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/browser-use-node/port-diff">Python to TypeScript Port Differences</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/browser-use-node/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Project</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Python to TypeScript Port Differences</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Python to TypeScript Port Differences</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="table-of-contents">Table of Contents<a href="#table-of-contents" class="hash-link" aria-label="Direct link to Table of Contents" title="Direct link to Table of Contents">​</a></h2>
+<ol>
+<li><a href="#project-structure">Project Structure</a>
+<ul>
+<li>Python Structure</li>
+<li>TypeScript Structure</li>
+</ul>
+</li>
+<li><a href="#core-module-differences">Core Module Differences</a>
+<ul>
+<li>Agent Module</li>
+<li>Message Manager</li>
+<li>Browser Implementation</li>
+<li>Context Management</li>
+<li>DOM Service</li>
+<li>Controller &amp; Registry</li>
+<li>Type System</li>
+<li>Error Handling</li>
+<li>Configuration &amp; Validation</li>
+<li>Logging &amp; Telemetry</li>
+</ul>
+</li>
+<li><a href="#action-items">Action Items</a>
+<ul>
+<li>High Priority</li>
+<li>Medium Priority</li>
+<li>Low Priority</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="project-structure">Project Structure<a href="#project-structure" class="hash-link" aria-label="Direct link to Project Structure" title="Direct link to Project Structure">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="python-structure">Python Structure<a href="#python-structure" class="hash-link" aria-label="Direct link to Python Structure" title="Direct link to Python Structure">​</a></h3>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#9CDCFE"><span class="token plain">browser_use/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">├── agent/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── message_manager/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   │   ├── service.py</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   │   └── views.py</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── service.py</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── views.py</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   └── prompts.py</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">├── browser/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── browser.py</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── context.py</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   └── views.py</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">├── controller/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── registry/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── service.py</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   └── views.py</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">├── dom/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── history_tree_processor/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── service.py</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   └── views.py</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">└── telemetry/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    ├── service.py</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    └── views.py</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="typescript-structure">TypeScript Structure<a href="#typescript-structure" class="hash-link" aria-label="Direct link to TypeScript Structure" title="Direct link to TypeScript Structure">​</a></h3>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#9CDCFE;--prism-background-color:#1E1E1E"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#9CDCFE;background-color:#1E1E1E"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#9CDCFE"><span class="token plain">src/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">├── agent/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── agent.ts</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── message-manager.ts</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── prompts.ts</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── types.ts</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   └── agent-output.ts</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">├── browser/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── browser.ts</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── context.ts</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── types.ts</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   └── config.ts</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">├── controller/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── registry/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── controller.ts</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   └── types.ts</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">├── dom/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── service.ts</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   ├── types.ts</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">│   └── tree-processor.ts</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">└── telemetry/</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    ├── service.ts</span><br></span><span class="token-line" style="color:#9CDCFE"><span class="token plain">    └── views.ts</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="core-module-differences">Core Module Differences<a href="#core-module-differences" class="hash-link" aria-label="Direct link to Core Module Differences" title="Direct link to Core Module Differences">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="agent-module">Agent Module<a href="#agent-module" class="hash-link" aria-label="Direct link to Agent Module" title="Direct link to Agent Module">​</a></h3>
+<ul>
+<li>Python uses Pydantic models for validation, TypeScript uses plain interfaces</li>
+<li>Python has <code>@time_execution_async</code> decorator for step method</li>
+<li>Python has telemetry setup in constructor</li>
+<li>Python has more robust error handling with specific error types</li>
+<li>Python uses <code>model_dump_json</code> for serialization</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="message-manager">Message Manager<a href="#message-manager" class="hash-link" aria-label="Direct link to Message Manager" title="Direct link to Message Manager">​</a></h3>
+<ul>
+<li>Python has message manager in separate directory</li>
+<li>Python uses Pydantic models for validation</li>
+<li>Python has more robust token counting with specific model support</li>
+<li>Python has better error handling and logging</li>
+<li>Python uses <code>model_dump_json</code> for serialization</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="browser-implementation">Browser Implementation<a href="#browser-implementation" class="hash-link" aria-label="Direct link to Browser Implementation" title="Direct link to Browser Implementation">​</a></h3>
+<ul>
+<li>TypeScript now uses Chromium by default</li>
+<li>TypeScript now has equivalent Chrome instance connection support</li>
+<li>Python has more robust anti-detection measures</li>
+<li>Python&#x27;s error handling is more comprehensive</li>
+<li>TypeScript browser management now matches Python&#x27;s</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="context-management">Context Management<a href="#context-management" class="hash-link" aria-label="Direct link to Context Management" title="Direct link to Context Management">​</a></h3>
+<ul>
+<li>Python&#x27;s element location strategy is more reliable</li>
+<li>Python&#x27;s frame and shadow DOM handling is better</li>
+<li>Python&#x27;s event handling is cleaner</li>
+<li>Python&#x27;s file uploader detection is more accurate</li>
+<li>TypeScript needs to enhance its DOM interaction capabilities</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="dom-service">DOM Service<a href="#dom-service" class="hash-link" aria-label="Direct link to DOM Service" title="Direct link to DOM Service">​</a></h3>
+<ul>
+<li>Python has comprehensive shadow DOM support with <code>querySelectorDeep</code> and <code>querySelectorAllDeep</code> methods</li>
+<li>Python has extensive iframe support with methods for content access and querying</li>
+<li>Python uses comprehensive visibility checks including opacity, display, and viewport</li>
+<li>Python has separate methods for building DOM tree with shadow DOM and iframes</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="controller--registry">Controller &amp; Registry<a href="#controller--registry" class="hash-link" aria-label="Direct link to Controller &amp; Registry" title="Direct link to Controller &amp; Registry">​</a></h3>
+<ul>
+<li>Python uses Pydantic models while TypeScript uses Zod schemas</li>
+<li>Python&#x27;s registry has better error handling and type safety</li>
+<li>Python&#x27;s registry has a cleaner way of creating parameter models from function signatures</li>
+<li>Python&#x27;s registry handles async/sync functions automatically</li>
+<li>Python&#x27;s <code>ActionResult</code> is simpler and more consistent</li>
+<li>TypeScript&#x27;s <code>ActionResult</code> has an extra <code>success</code> field that&#x27;s not in Python</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="type-system">Type System<a href="#type-system" class="hash-link" aria-label="Direct link to Type System" title="Direct link to Type System">​</a></h3>
+<ul>
+<li>Python uses Pydantic models and dataclasses for validation</li>
+<li>TypeScript uses plain interfaces without runtime validation</li>
+<li>Python has more comprehensive DOM types with better separation</li>
+<li>Python has better history tracking with proper serialization</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="error-handling">Error Handling<a href="#error-handling" class="hash-link" aria-label="Direct link to Error Handling" title="Direct link to Error Handling">​</a></h3>
+<ul>
+<li>Python has more specific error types</li>
+<li>Python has proper error formatting with trace support</li>
+<li>Python has better error message organization</li>
+<li>Python has better error recovery strategies</li>
+<li>Python has better error logging</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration--validation">Configuration &amp; Validation<a href="#configuration--validation" class="hash-link" aria-label="Direct link to Configuration &amp; Validation" title="Direct link to Configuration &amp; Validation">​</a></h3>
+<ul>
+<li>Python uses Pydantic models for configuration</li>
+<li>Python has better configuration loading with multiple source support</li>
+<li>Python has better configuration validation with runtime checks</li>
+<li>Python has better type coercion and default values</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="logging--telemetry">Logging &amp; Telemetry<a href="#logging--telemetry" class="hash-link" aria-label="Direct link to Logging &amp; Telemetry" title="Direct link to Logging &amp; Telemetry">​</a></h3>
+<ul>
+<li>Python has better logging configuration with proper log levels</li>
+<li>Python has proper event types with validation</li>
+<li>Python has better event tracking and filtering</li>
+<li>Python has better performance monitoring with metric types</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="action-items">Action Items<a href="#action-items" class="hash-link" aria-label="Direct link to Action Items" title="Direct link to Action Items">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="high-priority">High Priority<a href="#high-priority" class="hash-link" aria-label="Direct link to High Priority" title="Direct link to High Priority">​</a></h3>
+<ol>
+<li>
+<p>Enhance DOM interaction capabilities:</p>
+<ul>
+<li>Improve element location strategy</li>
+<li>Enhance frame and shadow DOM handling</li>
+<li>Clean up event handling</li>
+<li>Improve file uploader detection</li>
+</ul>
+</li>
+<li>
+<p>Implement more robust anti-detection measures:</p>
+<ul>
+<li>Add comprehensive browser fingerprint protection</li>
+<li>Improve stealth mode capabilities</li>
+<li>Add more sophisticated bot detection avoidance</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="medium-priority">Medium Priority<a href="#medium-priority" class="hash-link" aria-label="Direct link to Medium Priority" title="Direct link to Medium Priority">​</a></h3>
+<ol>
+<li>
+<p>Improve error handling:</p>
+<ul>
+<li>Add specific error types</li>
+<li>Add proper error formatting</li>
+<li>Improve error recovery strategies</li>
+<li>Add comprehensive logging</li>
+</ul>
+</li>
+<li>
+<p>Enhance type system:</p>
+<ul>
+<li>Add runtime validation using Zod</li>
+<li>Improve DOM type hierarchy</li>
+<li>Add proper serialization methods</li>
+<li>Add comprehensive attributes</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="low-priority">Low Priority<a href="#low-priority" class="hash-link" aria-label="Direct link to Low Priority" title="Direct link to Low Priority">​</a></h3>
+<ol>
+<li>
+<p>Improve testing:</p>
+<ul>
+<li>Add real-world scenario tests</li>
+<li>Add performance measurement</li>
+<li>Add token counting for LLM</li>
+<li>Add proper cleanup with context managers</li>
+</ul>
+</li>
+<li>
+<p>Enhance documentation and tooling:</p>
+<ul>
+<li>Improve documentation</li>
+<li>Add performance optimizations</li>
+<li>Add more examples</li>
+<li>Add debugging tools</li>
+</ul>
+</li>
+</ol>
+<p>Each task will be tackled in order of priority, with high-priority items being addressed first. The focus will be on ensuring core functionality and reliability before moving on to optimizations and enhancements.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/dankovk/browser-use-node/tree/main/docs/docs/port-diff.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/browser-use-node/security"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Security Policy</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#table-of-contents" class="table-of-contents__link toc-highlight">Table of Contents</a></li><li><a href="#project-structure" class="table-of-contents__link toc-highlight">Project Structure</a><ul><li><a href="#python-structure" class="table-of-contents__link toc-highlight">Python Structure</a></li><li><a href="#typescript-structure" class="table-of-contents__link toc-highlight">TypeScript Structure</a></li></ul></li><li><a href="#core-module-differences" class="table-of-contents__link toc-highlight">Core Module Differences</a><ul><li><a href="#agent-module" class="table-of-contents__link toc-highlight">Agent Module</a></li><li><a href="#message-manager" class="table-of-contents__link toc-highlight">Message Manager</a></li><li><a href="#browser-implementation" class="table-of-contents__link toc-highlight">Browser Implementation</a></li><li><a href="#context-management" class="table-of-contents__link toc-highlight">Context Management</a></li><li><a href="#dom-service" class="table-of-contents__link toc-highlight">DOM Service</a></li><li><a href="#controller--registry" class="table-of-contents__link toc-highlight">Controller &amp; Registry</a></li><li><a href="#type-system" class="table-of-contents__link toc-highlight">Type System</a></li><li><a href="#error-handling" class="table-of-contents__link toc-highlight">Error Handling</a></li><li><a href="#configuration--validation" class="table-of-contents__link toc-highlight">Configuration &amp; Validation</a></li><li><a href="#logging--telemetry" class="table-of-contents__link toc-highlight">Logging &amp; Telemetry</a></li></ul></li><li><a href="#action-items" class="table-of-contents__link toc-highlight">Action Items</a><ul><li><a href="#high-priority" class="table-of-contents__link toc-highlight">High Priority</a></li><li><a href="#medium-priority" class="table-of-contents__link toc-highlight">Medium Priority</a></li><li><a href="#low-priority" class="table-of-contents__link toc-highlight">Low Priority</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/browser-use-node/">Getting Started</a></li><li class="footer__item"><a class="footer__link-item" href="/browser-use-node/api/globals">API Reference</a></li></ul></div><div class="col footer__col"><div class="footer__title">Project</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/browser-use-node/contributing">Contributing</a></li><li class="footer__item"><a class="footer__link-item" href="/browser-use-node/code-of-conduct">Code of Conduct</a></li><li class="footer__item"><a class="footer__link-item" href="/browser-use-node/security">Security</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/dankovk/browser-use-node" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://github.com/dankovk/browser-use-node/issues" target="_blank" rel="noopener noreferrer" class="footer__link-item">Issues<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 browser-use-node. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
